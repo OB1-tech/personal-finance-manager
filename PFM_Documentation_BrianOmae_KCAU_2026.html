@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PFM Documentation | Brian Omae | KCA University 2026</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0f1b2d; color: #e2e8f0; line-height: 1.7; }
+  .topbar { background: #162236; border-bottom: 1px solid #2a3f5f; padding: 14px 24px; display: flex; align-items: center; justify-content: space-between; position: sticky; top: 0; z-index: 10; }
+  .topbar-brand { display: flex; align-items: center; gap: 10px; font-size: 16px; font-weight: 700; color: #f5c542; }
+  .topbar a { color: #7a9bbf; text-decoration: none; font-size: 14px; font-weight: 600; }
+  .topbar a:hover { color: #f5c542; }
+  .container { max-width: 860px; margin: 0 auto; padding: 48px 24px 80px; }
+  .page-title { font-size: clamp(24px, 4vw, 38px); font-weight: 800; margin-bottom: 8px; }
+  .page-title span { color: #f5c542; }
+  .page-sub { color: #7a9bbf; font-size: 15px; margin-bottom: 40px; }
+  h2 { font-size: 20px; font-weight: 700; margin: 40px 0 16px; color: #f5c542; border-left: 3px solid #f5c542; padding-left: 12px; }
+  h3 { font-size: 16px; font-weight: 700; margin: 20px 0 8px; }
+  p { font-size: 14px; color: #a8c0d8; margin-bottom: 12px; }
+  .card { background: #1a2b42; border: 1px solid #2a3f5f; border-radius: 14px; padding: 20px; margin-bottom: 16px; }
+  .info-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; margin-bottom: 24px; }
+  .info-item { background: #1a2b42; border: 1px solid #2a3f5f; border-radius: 10px; padding: 14px; }
+  .info-item .label { font-size: 11px; color: #7a9bbf; font-weight: 600; text-transform: uppercase; letter-spacing: 0.5px; margin-bottom: 4px; }
+  .info-item .value { font-size: 14px; font-weight: 600; }
+  table { width: 100%; border-collapse: collapse; font-size: 13px; margin-bottom: 16px; }
+  th { background: #162236; padding: 10px 14px; text-align: left; color: #f5c542; font-weight: 600; border-bottom: 1px solid #2a3f5f; }
+  td { padding: 10px 14px; border-bottom: 1px solid #2a3f5f; color: #a8c0d8; }
+  tr:hover td { background: #1e3250; }
+  .badge { display: inline-block; padding: 3px 10px; border-radius: 20px; font-size: 11px; font-weight: 600; }
+  .badge.green { background: rgba(34,197,94,0.15); color: #22c55e; }
+  .badge.blue { background: rgba(59,130,246,0.15); color: #3b82f6; }
+  .badge.gold { background: rgba(245,197,66,0.15); color: #f5c542; }
+  .tech-stack { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 12px; }
+  .tech-pill { background: #162236; border: 1px solid #2a3f5f; border-radius: 8px; padding: 8px 14px; font-size: 13px; font-weight: 600; }
+  .module-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(180px, 1fr)); gap: 12px; }
+  .module-card { background: #1a2b42; border: 1px solid #2a3f5f; border-radius: 12px; padding: 16px; text-align: center; }
+  .module-card .icon { font-size: 28px; margin-bottom: 8px; }
+  .module-card h4 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .module-card p { font-size: 12px; color: #7a9bbf; margin: 0; }
+  .footer { text-align: center; padding: 32px; color: #7a9bbf; font-size: 13px; border-top: 1px solid #2a3f5f; margin-top: 40px; }
+  ul { padding-left: 20px; color: #a8c0d8; font-size: 14px; }
+  ul li { margin-bottom: 6px; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <div class="topbar-brand">💰 PFM Documentation</div>
+  <a href="app.html">Launch App →</a>
+</div>
+
+<div class="container">
+  <div class="page-title">Personal <span>Finance Manager</span></div>
+  <div class="page-sub">Project Documentation • Brian Omae • KCA University 2026</div>
+
+  <div class="info-grid">
+    <div class="info-item"><div class="label">Student</div><div class="value">Brian Omae</div></div>
+    <div class="info-item"><div class="label">Reg Number</div><div class="value">22/03810</div></div>
+    <div class="info-item"><div class="label">Supervisor</div><div class="value">Mr. Joseph Muigai Kuria</div></div>
+    <div class="info-item"><div class="label">Institution</div><div class="value">KCA University</div></div>
+    <div class="info-item"><div class="label">Program</div><div class="value">BSc. Software Development</div></div>
+    <div class="info-item"><div class="label">Year</div><div class="value">2026</div></div>
+  </div>
+
+  <h2>1. Project Overview</h2>
+  <div class="card">
+    <p>The Personal Finance Manager (PFM) is a web-based application designed to help individuals manage their personal finances effectively. The system enables users to track income and expenses, set budgets per category, and monitor progress towards savings goals — all through an intuitive, mobile-friendly interface.</p>
+    <p>The application is built as a single-file HTML application connected to a Supabase backend, ensuring real-time data persistence and secure user authentication without requiring complex server infrastructure.</p>
+  </div>
+
+  <h2>2. System Modules</h2>
+  <div class="module-grid">
+    <div class="module-card"><div class="icon">📊</div><h4>Dashboard</h4><p>Financial overview, summaries, spending trend chart, and recent transactions</p></div>
+    <div class="module-card"><div class="icon">💳</div><h4>Transactions</h4><p>Add, view, and delete income/expense records with category filtering</p></div>
+    <div class="module-card"><div class="icon">📈</div><h4>Budgets</h4><p>Set monthly spending limits per category with visual progress tracking</p></div>
+    <div class="module-card"><div class="icon">⭐</div><h4>Savings Goals</h4><p>Define savings targets, track amounts saved, and monitor deadlines</p></div>
+  </div>
+
+  <h2>3. Technology Stack</h2>
+  <div class="card">
+    <div class="tech-stack">
+      <div class="tech-pill">🌐 HTML5 / CSS3</div>
+      <div class="tech-pill">⚡ Vanilla JavaScript</div>
+      <div class="tech-pill">🗄️ Supabase (PostgreSQL)</div>
+      <div class="tech-pill">🔐 Supabase Auth</div>
+      <div class="tech-pill">📊 Chart.js</div>
+      <div class="tech-pill">🚀 GitHub Pages</div>
+    </div>
+  </div>
+
+  <h2>4. Database Schema</h2>
+  <div class="card">
+    <h3>transactions</h3>
+    <table>
+      <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+      <tr><td>id</td><td>uuid</td><td>Primary key (auto-generated)</td></tr>
+      <tr><td>user_id</td><td>uuid</td><td>References auth.users</td></tr>
+      <tr><td>amount</td><td>numeric</td><td>Transaction amount in KES</td></tr>
+      <tr><td>type</td><td>text</td><td>income or expense</td></tr>
+      <tr><td>category</td><td>text</td><td>Food, Transport, Salary, etc.</td></tr>
+      <tr><td>description</td><td>text</td><td>Short description</td></tr>
+      <tr><td>date</td><td>date</td><td>Transaction date</td></tr>
+      <tr><td>created_at</td><td>timestamptz</td><td>Record creation timestamp</td></tr>
+    </table>
+
+    <h3>budgets</h3>
+    <table>
+      <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+      <tr><td>id</td><td>uuid</td><td>Primary key</td></tr>
+      <tr><td>user_id</td><td>uuid</td><td>References auth.users</td></tr>
+      <tr><td>category</td><td>text</td><td>Budget category</td></tr>
+      <tr><td>limit_amount</td><td>numeric</td><td>Monthly spending limit</td></tr>
+      <tr><td>month</td><td>text</td><td>Budget month (YYYY-MM)</td></tr>
+    </table>
+
+    <h3>savings_goals</h3>
+    <table>
+      <tr><th>Column</th><th>Type</th><th>Description</th></tr>
+      <tr><td>id</td><td>uuid</td><td>Primary key</td></tr>
+      <tr><td>user_id</td><td>uuid</td><td>References auth.users</td></tr>
+      <tr><td>name</td><td>text</td><td>Goal name</td></tr>
+      <tr><td>target_amount</td><td>numeric</td><td>Target savings amount</td></tr>
+      <tr><td>current_amount</td><td>numeric</td><td>Amount saved so far</td></tr>
+      <tr><td>target_date</td><td>date</td><td>Goal deadline</td></tr>
+    </table>
+  </div>
+
+  <h2>5. Key Features</h2>
+  <div class="card">
+    <ul>
+      <li>Secure user registration and login via Supabase Authentication</li>
+      <li>Real-time data persistence — all data saved to PostgreSQL database</li>
+      <li>Row Level Security (RLS) — each user sees only their own data</li>
+      <li>Interactive charts: spending trend, budget vs actual, goal progress</li>
+      <li>Category filter chips for quick transaction browsing</li>
+      <li>CSV export for spreadsheet use</li>
+      <li>PDF report generation via browser print</li>
+      <li>Fully mobile-responsive with bottom navigation bar</li>
+      <li>Notification bell and profile settings panel</li>
+    </ul>
+  </div>
+
+  <h2>6. System Architecture</h2>
+  <div class="card">
+    <p><strong>Frontend:</strong> Single-file HTML application (app.html) with embedded CSS and JavaScript. No build tools or frameworks required — runs directly in any modern browser.</p>
+    <p><strong>Backend:</strong> Supabase provides a PostgreSQL database, RESTful API (auto-generated), and JWT-based authentication. The app communicates with Supabase via the official JavaScript client library.</p>
+    <p><strong>Hosting:</strong> Deployed on GitHub Pages — a free static site hosting service. The landing page (index.html) links to the main application (app.html).</p>
+    <p><strong>Security:</strong> Row Level Security (RLS) policies on all database tables ensure users can only read and write their own data. API keys used are the public anon key, which is safe for client-side use when RLS is enabled.</p>
+  </div>
+
+  <h2>7. Challenges & Solutions</h2>
+  <div class="card">
+    <table>
+      <tr><th>Challenge</th><th>Solution</th></tr>
+      <tr><td>Variable naming conflict with Supabase JS client</td><td>Renamed internal variable from <code>supabase</code> to <code>sbClient</code></td></tr>
+      <tr><td>Railway deployment unreliable</td><td>Switched to Supabase for managed backend and auth</td></tr>
+      <tr><td>SQL Editor syntax errors</td><td>Ran each CREATE TABLE statement individually</td></tr>
+      <tr><td>Cross-device workflow (iPad + HP laptop)</td><td>Used browser-based tools only — GitHub.dev, Supabase dashboard</td></tr>
+    </table>
+  </div>
+
+  <div class="footer">
+    💰 Personal Finance Manager &nbsp;•&nbsp; Brian Omae (22/03810) &nbsp;•&nbsp; KCA University 2026<br>
+    Supervised by Mr. Joseph Muigai Kuria &nbsp;•&nbsp; BSc. Software Development
+  </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Personal Finance Manager | Brian Omae | KCA University</title>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+<style>
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body { font-family: 'Plus Jakarta Sans', sans-serif; background: #0f1b2d; color: #e2e8f0; min-height: 100vh; }
+  .hero {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background: radial-gradient(ellipse at top, #1a2b42 0%, #0f1b2d 70%);
+  }
+  .badge { background: rgba(245,197,66,0.15); border: 1px solid rgba(245,197,66,0.3); color: #f5c542; font-size: 12px; font-weight: 600; padding: 6px 14px; border-radius: 20px; margin-bottom: 24px; letter-spacing: 1px; text-transform: uppercase; }
+  .logo { font-size: 60px; margin-bottom: 16px; }
+  h1 { font-size: clamp(28px, 5vw, 48px); font-weight: 800; margin-bottom: 16px; line-height: 1.2; }
+  h1 span { color: #f5c542; }
+  .subtitle { font-size: 16px; color: #7a9bbf; max-width: 480px; margin: 0 auto 36px; line-height: 1.6; }
+  .cta-btn {
+    display: inline-block;
+    padding: 16px 40px;
+    background: #f5c542;
+    color: #0f1b2d;
+    font-size: 16px;
+    font-weight: 800;
+    border-radius: 12px;
+    text-decoration: none;
+    transition: all 0.2s;
+    margin-bottom: 12px;
+  }
+  .cta-btn:hover { background: #e6b800; transform: translateY(-2px); box-shadow: 0 8px 24px rgba(245,197,66,0.3); }
+  .meta { font-size: 13px; color: #7a9bbf; margin-top: 32px; line-height: 1.8; }
+  .meta strong { color: #e2e8f0; }
+  .features { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px; max-width: 700px; margin: 40px auto 0; text-align: left; }
+  .feature { background: #1a2b42; border: 1px solid #2a3f5f; border-radius: 12px; padding: 18px; }
+  .feature .icon { font-size: 24px; margin-bottom: 8px; }
+  .feature h3 { font-size: 14px; font-weight: 700; margin-bottom: 4px; }
+  .feature p { font-size: 12px; color: #7a9bbf; line-height: 1.5; }
+</style>
+</head>
+<body>
+<div class="hero">
+  <div class="badge">Final Year Project • KCA University 2026</div>
+  <div class="logo">💰</div>
+  <h1>Personal <span>Finance</span> Manager</h1>
+  <p class="subtitle">A smart web application to track income, expenses, budgets, and savings goals — all in one place.</p>
+  <a href="app.html" class="cta-btn">🚀 Launch App</a>
+  <div class="features">
+    <div class="feature"><div class="icon">📊</div><h3>Dashboard</h3><p>Visual overview of your finances with spending trends and summaries.</p></div>
+    <div class="feature"><div class="icon">💳</div><h3>Transactions</h3><p>Track income and expenses with category filters and CSV/PDF export.</p></div>
+    <div class="feature"><div class="icon">📈</div><h3>Budgets</h3><p>Set spending limits per category and monitor your progress.</p></div>
+    <div class="feature"><div class="icon">⭐</div><h3>Savings Goals</h3><p>Define financial goals and track how close you are to achieving them.</p></div>
+  </div>
+  <div class="meta">
+    <strong>Student:</strong> Brian Omae &nbsp;|&nbsp; <strong>Reg No:</strong> 22/03810<br>
+    <strong>Supervisor:</strong> Mr. Joseph Muigai Kuria &nbsp;|&nbsp; <strong>Institution:</strong> KCA University<br>
+    <strong>Program:</strong> BSc. Software Development &nbsp;|&nbsp; <strong>Year:</strong> 2026
+  </div>
+</div>
+</body>
+</html>
